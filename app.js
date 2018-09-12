@@ -5,12 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-const Nexmo = require('nexmo');
-const nexmo = new Nexmo({
-  apiKey: 'API_KEY',
-  apiSecret: 'API_SECRET',
-}, {debug: true});
-
 var index = require('./routes/index');
 var users = require('./routes/users');
 
